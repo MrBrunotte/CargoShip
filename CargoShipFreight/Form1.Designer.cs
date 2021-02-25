@@ -65,56 +65,56 @@ namespace CargoShipFreight
             // label_cycleCount
             // 
             this.label_cycleCount.AutoSize = true;
-            this.label_cycleCount.Location = new System.Drawing.Point(134, 42);
+            this.label_cycleCount.Location = new System.Drawing.Point(98, 42);
             this.label_cycleCount.Name = "label_cycleCount";
-            this.label_cycleCount.Size = new System.Drawing.Size(35, 13);
+            this.label_cycleCount.Size = new System.Drawing.Size(65, 13);
             this.label_cycleCount.TabIndex = 1;
-            this.label_cycleCount.Text = "label1";
+            this.label_cycleCount.Text = "MotorCycles";
             // 
             // label_carCount
             // 
             this.label_carCount.AutoSize = true;
-            this.label_carCount.Location = new System.Drawing.Point(134, 174);
+            this.label_carCount.Location = new System.Drawing.Point(98, 132);
             this.label_carCount.Name = "label_carCount";
-            this.label_carCount.Size = new System.Drawing.Size(35, 13);
+            this.label_carCount.Size = new System.Drawing.Size(28, 13);
             this.label_carCount.TabIndex = 2;
-            this.label_carCount.Text = "label2";
+            this.label_carCount.Text = "Cars";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(106, 115);
+            this.label3.Location = new System.Drawing.Point(191, 42);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 13);
+            this.label3.Size = new System.Drawing.Size(44, 13);
             this.label3.TabIndex = 3;
-            this.label3.Text = "MotorCycles (3 units)";
+            this.label3.Text = "(3 units)";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(116, 238);
+            this.label4.Location = new System.Drawing.Point(191, 132);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 13);
+            this.label4.Size = new System.Drawing.Size(44, 13);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Cars (5 units)";
+            this.label4.Text = "(5 units)";
             // 
             // label_truckCount
             // 
             this.label_truckCount.AutoSize = true;
-            this.label_truckCount.Location = new System.Drawing.Point(134, 289);
+            this.label_truckCount.Location = new System.Drawing.Point(98, 216);
             this.label_truckCount.Name = "label_truckCount";
-            this.label_truckCount.Size = new System.Drawing.Size(35, 13);
+            this.label_truckCount.Size = new System.Drawing.Size(40, 13);
             this.label_truckCount.TabIndex = 5;
-            this.label_truckCount.Text = "label5";
+            this.label_truckCount.Text = "Trucks";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(106, 356);
+            this.label6.Location = new System.Drawing.Point(185, 216);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(86, 13);
+            this.label6.Size = new System.Drawing.Size(50, 13);
             this.label6.TabIndex = 6;
-            this.label6.Text = "Trucks (11 units)";
+            this.label6.Text = "(11 units)";
             // 
             // progressBar2
             // 
@@ -125,9 +125,9 @@ namespace CargoShipFreight
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(101, 515);
+            this.button1.Location = new System.Drawing.Point(59, 412);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(107, 46);
+            this.button1.Size = new System.Drawing.Size(276, 46);
             this.button1.TabIndex = 9;
             this.button1.Text = "New Load";
             this.button1.UseVisualStyleBackColor = true;
@@ -135,7 +135,7 @@ namespace CargoShipFreight
             // 
             // track_motorCycles
             // 
-            this.track_motorCycles.Location = new System.Drawing.Point(59, 67);
+            this.track_motorCycles.Location = new System.Drawing.Point(59, 58);
             this.track_motorCycles.Name = "track_motorCycles";
             this.track_motorCycles.Size = new System.Drawing.Size(205, 45);
             this.track_motorCycles.TabIndex = 10;
@@ -143,7 +143,7 @@ namespace CargoShipFreight
             // 
             // track_trainCars
             // 
-            this.track_trainCars.Location = new System.Drawing.Point(59, 426);
+            this.track_trainCars.Location = new System.Drawing.Point(59, 332);
             this.track_trainCars.Name = "track_trainCars";
             this.track_trainCars.Size = new System.Drawing.Size(205, 45);
             this.track_trainCars.TabIndex = 11;
@@ -151,7 +151,7 @@ namespace CargoShipFreight
             // 
             // track_trucks
             // 
-            this.track_trucks.Location = new System.Drawing.Point(59, 308);
+            this.track_trucks.Location = new System.Drawing.Point(59, 241);
             this.track_trucks.Name = "track_trucks";
             this.track_trucks.Size = new System.Drawing.Size(205, 45);
             this.track_trucks.TabIndex = 12;
@@ -159,7 +159,7 @@ namespace CargoShipFreight
             // 
             // track_cars
             // 
-            this.track_cars.Location = new System.Drawing.Point(59, 190);
+            this.track_cars.Location = new System.Drawing.Point(59, 148);
             this.track_cars.Name = "track_cars";
             this.track_cars.Size = new System.Drawing.Size(205, 45);
             this.track_cars.TabIndex = 13;
@@ -168,20 +168,20 @@ namespace CargoShipFreight
             // label_trainCarCount
             // 
             this.label_trainCarCount.AutoSize = true;
-            this.label_trainCarCount.Location = new System.Drawing.Point(134, 401);
+            this.label_trainCarCount.Location = new System.Drawing.Point(98, 316);
             this.label_trainCarCount.Name = "label_trainCarCount";
-            this.label_trainCarCount.Size = new System.Drawing.Size(35, 13);
+            this.label_trainCarCount.Size = new System.Drawing.Size(52, 13);
             this.label_trainCarCount.TabIndex = 14;
-            this.label_trainCarCount.Text = "label7";
+            this.label_trainCarCount.Text = "TrainCars";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(106, 474);
+            this.label8.Location = new System.Drawing.Point(185, 316);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(98, 13);
+            this.label8.Size = new System.Drawing.Size(50, 13);
             this.label8.TabIndex = 15;
-            this.label8.Text = "TrainCars (17 units)";
+            this.label8.Text = "(17 units)";
             // 
             // label_shipLabel
             // 
