@@ -40,19 +40,19 @@ namespace CargoShipFreight
 
         }
 
-        public int OverUnder()
+        public int overUnder()
         {
             // returns a value how loaded the ship is
-            return Capacity - GetShipLoad();
+            return Capacity - getShipLoad();
         }
 
         public override string ToString()
         {
-            return $"Capacity = {Capacity}, CurrentLoad = {GetShipLoad()}";
+            return $"Capacity = {Capacity}, CurrentLoad = {getShipLoad()}";
         }
 
         // Method
-        public int GetShipLoad()
+        public int getShipLoad()
         {
             // calculate the total weight of the cargo of the ship.
             return CycleCount * CYCLE_WEIGHT +

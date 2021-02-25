@@ -39,14 +39,15 @@ namespace CargoShipFreight
             this.progressBar2 = new System.Windows.Forms.ProgressBar();
             this.button1 = new System.Windows.Forms.Button();
             this.track_motorCycles = new System.Windows.Forms.TrackBar();
-            this.track_cargoTrains = new System.Windows.Forms.TrackBar();
+            this.track_trainCars = new System.Windows.Forms.TrackBar();
             this.track_trucks = new System.Windows.Forms.TrackBar();
             this.track_cars = new System.Windows.Forms.TrackBar();
             this.label_trainCarCount = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.label_shipLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.track_motorCycles)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.track_cargoTrains)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.track_trainCars)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.track_trucks)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.track_cars)).BeginInit();
             this.SuspendLayout();
@@ -87,7 +88,6 @@ namespace CargoShipFreight
             this.label3.Size = new System.Drawing.Size(105, 13);
             this.label3.TabIndex = 3;
             this.label3.Text = "MotorCycles (3 units)";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -129,8 +129,9 @@ namespace CargoShipFreight
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(107, 46);
             this.button1.TabIndex = 9;
-            this.button1.Text = "button1";
+            this.button1.Text = "New Load";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // track_motorCycles
             // 
@@ -138,13 +139,15 @@ namespace CargoShipFreight
             this.track_motorCycles.Name = "track_motorCycles";
             this.track_motorCycles.Size = new System.Drawing.Size(205, 45);
             this.track_motorCycles.TabIndex = 10;
+            this.track_motorCycles.Scroll += new System.EventHandler(this.track_motorCycles_Scroll);
             // 
-            // track_cargoTrains
+            // track_trainCars
             // 
-            this.track_cargoTrains.Location = new System.Drawing.Point(59, 426);
-            this.track_cargoTrains.Name = "track_cargoTrains";
-            this.track_cargoTrains.Size = new System.Drawing.Size(205, 45);
-            this.track_cargoTrains.TabIndex = 11;
+            this.track_trainCars.Location = new System.Drawing.Point(59, 426);
+            this.track_trainCars.Name = "track_trainCars";
+            this.track_trainCars.Size = new System.Drawing.Size(205, 45);
+            this.track_trainCars.TabIndex = 11;
+            this.track_trainCars.Scroll += new System.EventHandler(this.track_cargoTrains_Scroll);
             // 
             // track_trucks
             // 
@@ -152,6 +155,7 @@ namespace CargoShipFreight
             this.track_trucks.Name = "track_trucks";
             this.track_trucks.Size = new System.Drawing.Size(205, 45);
             this.track_trucks.TabIndex = 12;
+            this.track_trucks.Scroll += new System.EventHandler(this.track_trucks_Scroll);
             // 
             // track_cars
             // 
@@ -159,6 +163,7 @@ namespace CargoShipFreight
             this.track_cars.Name = "track_cars";
             this.track_cars.Size = new System.Drawing.Size(205, 45);
             this.track_cars.TabIndex = 13;
+            this.track_cars.Scroll += new System.EventHandler(this.track_cars_Scroll);
             // 
             // label_trainCarCount
             // 
@@ -178,16 +183,27 @@ namespace CargoShipFreight
             this.label8.TabIndex = 15;
             this.label8.Text = "TrainCars (17 units)";
             // 
+            // label_shipLabel
+            // 
+            this.label_shipLabel.AutoSize = true;
+            this.label_shipLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_shipLabel.Location = new System.Drawing.Point(523, 165);
+            this.label_shipLabel.Name = "label_shipLabel";
+            this.label_shipLabel.Size = new System.Drawing.Size(102, 26);
+            this.label_shipLabel.TabIndex = 16;
+            this.label_shipLabel.Text = "Load Info";
+            // 
             // form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1134, 573);
+            this.Controls.Add(this.label_shipLabel);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label_trainCarCount);
             this.Controls.Add(this.track_cars);
             this.Controls.Add(this.track_trucks);
-            this.Controls.Add(this.track_cargoTrains);
+            this.Controls.Add(this.track_trainCars);
             this.Controls.Add(this.track_motorCycles);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.progressBar2);
@@ -203,7 +219,7 @@ namespace CargoShipFreight
             this.Load += new System.EventHandler(this.form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.track_motorCycles)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.track_cargoTrains)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.track_trainCars)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.track_trucks)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.track_cars)).EndInit();
             this.ResumeLayout(false);
@@ -223,11 +239,12 @@ namespace CargoShipFreight
         private System.Windows.Forms.ProgressBar progressBar2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TrackBar track_motorCycles;
-        private System.Windows.Forms.TrackBar track_cargoTrains;
+        private System.Windows.Forms.TrackBar track_trainCars;
         private System.Windows.Forms.TrackBar track_trucks;
         private System.Windows.Forms.TrackBar track_cars;
         private System.Windows.Forms.Label label_trainCarCount;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label_shipLabel;
     }
 }
 
