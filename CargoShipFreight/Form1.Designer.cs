@@ -84,9 +84,9 @@ namespace CargoShipFreight
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(106, 115);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(102, 13);
+            this.label3.Size = new System.Drawing.Size(105, 13);
             this.label3.TabIndex = 3;
-            this.label3.Text = "MotorCycles (3units)";
+            this.label3.Text = "MotorCycles (3 units)";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
